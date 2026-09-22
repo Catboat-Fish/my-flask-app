@@ -6,8 +6,8 @@ app = Flask(__name__)
 def intake():
     if request.method == 'POST':
         intake = request.form.get('intake') # takes intake from the page
-        return f"Your input was the following: {intake}" # intake output
-    return render_template('intake.html') # normal page
+        outtake = f"Your input was the following: {intake}" # intake output
+    return render_template('intake.html', outtake = outtake) # normal page
 
 if __name__ == "__main__":
     app.run(debug=True)
