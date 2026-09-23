@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 @app.route('/intake', methods=['GET', 'POST'])
 def intake():
+    outtake = "" # fixes startup issue
     if request.method == 'POST':
         intake = request.form.get('intake') # takes intake from the page
         outtake = f"Your input was the following: {intake}" # intake output
