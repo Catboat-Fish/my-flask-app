@@ -10,7 +10,7 @@ def create_app():
     #16KB limit
     app.config['MAX_CONTENT_LENGTH'] = 16 * 1024
 
-    @app.route('', methods=['GET', 'POST'])
+    @app.route('/intake', methods=['GET', 'POST'])
     def intake():
         # fixes startup issues
         message = None
