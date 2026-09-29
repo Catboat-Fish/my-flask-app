@@ -1,2 +1,2 @@
 ## What is this?
-This is a basic project showing that I understand Flask, HTML, and CSS. To test it out for yourself, WIP
+This is a basic project showing that I understand Flask, HTML, and CSS. To test it out for yourself, go to https://david-janney-flask-app.onrender.com and type something in, then hit submit.
